@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "99372638-d2f5-4315-aa66-da3aa4283165",
+		"name": "nodejam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28162586"
+	},
+	"item": [
+		{
+			"name": "add_user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"John Doe\", \"username\": \"johndoe\", \"password\":\"here_we_go\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/user/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"John Doe\", \"username\": \"johndoe\", \"password\": \"here_we_go\"}"
+				},
+				"url": {
+					"raw": "http://localhost/users/USER_ID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"users",
+						"USER_ID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get room",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/room",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create room",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"roomName\": \"Ruang 11\", \"userId\": 1}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/room",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update room",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"roomName\": \"Updated Chat Room\", \"userId\": 1}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/room/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"room",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete room",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/room/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"room",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
